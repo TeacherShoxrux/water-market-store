@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:water_market_store/UI/pages/login/widgets/custom_text_field.dart';
+import 'package:water_market_store/UI/pages/main/main_page.dart';
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
@@ -44,7 +45,9 @@ class LoginPage extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (c)=>MainPage()));
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
                     padding: const EdgeInsets.symmetric(vertical: 12),
